@@ -1,0 +1,128 @@
+:root {
+    --bg: #f6f7fb;
+    --card: #fff;
+    --muted: #6b7280;
+    --accent: #0ea5a4
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+    color: #0f172a;
+    background: var(--bg);
+    line-height: 1.5
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 16px
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 0
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px
+}
+
+
+.card {
+    background: var(--card);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+    text-decoration: none;
+    color: inherit
+}
+
+.media {
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    background: #e6eef0
+}
+
+.media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block
+}
+
+
+.card-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1
+}
+
+.meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 0.9rem;
+    color: var(--muted)
+}
+
+.title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 0
+}
+
+.excerpt {
+    margin: 0;
+    color: #334155;
+    font-size: 0.95rem
+}
+
+
+.actions {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    color: var(--accent);
+    cursor: pointer;
+    font-weight: 600;
+    padding: 6px 8px;
+    border-radius: 8px
+}
+
+
+/* pequeño responsive tweak */
+@media (max-width:420px) {
+    h1 {
+        font-size: 1.2rem
+    }
+
+    .card-content {
+        padding: 12px
+    }
+}

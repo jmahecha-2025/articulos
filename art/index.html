@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css"><title>Document</title>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1>Últimos artículos</h1>
+            <small class="meta">Mostrando <strong>3</strong> artículos</small>
+        </header>
+
+
+        <section class="grid" aria-label="Listado de artículos">
+
+
+            <!-- Artículo 1 -->
+            <article class="card" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="media" aria-hidden="true">
+                    <img src="https://picsum.photos/800/450?random=1" alt="Imagen representativa del artículo 1"
+                        loading="lazy" itemprop="image" />
+                </a>
+                <div class="card-content">
+                    <div class="meta">
+                        <time datetime="2025-10-22" itemprop="datePublished">22 oct 2025</time>
+                        <span>·</span>
+                        <span itemprop="author">Por <strong>Equipo</strong></span>
+                    </div>
+                    <h2 class="title" itemprop="headline">Título del artículo número 1</h2>
+                    <p class="excerpt" itemprop="description">Un breve extracto que resume el contenido del artículo.
+                        Ideal para enganchar al lector y mostrar de qué trata.</p>
+
+
+                    <div class="actions">
+                        <button class="btn" aria-label="Leer más del artículo 1">Leer más →</button>
+                        <small class="meta">3 min lectura</small>
+                    </div>
+                </div>
+            </article>
+
+
+            <!-- Artículo 2 -->
+            <article class="card" itemscope itemtype="http://schema.org/Article">
+                <a href="#" class="media" aria-hidden="true">
+                    <img src="https://picsum.photos/800/450?random=2" alt="Imagen representativa del artículo 2"
+                        loading="lazy" itemprop="image" />
+                </a>
+                <div class="card-content">
+                    <div class="meta">
+                        <time datetime="2025-10-20" itemprop="datePublished">20 oct 2025</time>
+                        <span>·</span>
+                        <span itemprop="author">Por <strong>María</strong></span>
+                    </div>
+                    <h2 class="title" itemprop="headline">Segundo artículo con imagen</h2>
+                    <p class="excerpt" itemprop="description">Otro extracto atractivo que adelanta el tema central para
+                        que el lector decida si abrir el artículo.</p>
+
+
+                    <div class="actions">
+                        <button class="btn" aria-label="Leer más del artículo 2">Leer más →</button>
+                        <small class="meta">5 min lectura</small>
+                    </div>
+                </div>
+    </main>
+    <script src="articulos.js"></script>
+</body>
+
+</html>
